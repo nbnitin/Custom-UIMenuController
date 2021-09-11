@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMenuView" customModule="CustomUIMenuController" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCopy" destination="Wer-EQ-svC" id="DM3-ei-rIx"/>
+                <outlet property="btnDefine" destination="Ynv-B3-7e8" id="edl-BM-aGy"/>
+                <outlet property="btnExplore" destination="eHx-qO-Edu" id="GDq-rL-op8"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ZNT-90-xoW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZCH-yd-NqL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wer-EQ-svC">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="736"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <state key="normal" title="Copy">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="copyButtonAction:" destination="-1" eventType="touchUpInside" id="j5E-HE-XLo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynv-B3-7e8">
+                            <rect key="frame" x="138" y="0.0" width="138" height="736"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <state key="normal" title="Define">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="defineButtonAction:" destination="-1" eventType="touchUpInside" id="Pqf-6j-ZJI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-qO-Edu">
+                            <rect key="frame" x="276" y="0.0" width="138" height="736"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="16"/>
+                            <state key="normal" title="Explore">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="exploreButtonAction:" destination="-1" eventType="touchUpInside" id="dF1-WX-F1c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZCH-yd-NqL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8G0-eW-cak"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZCH-yd-NqL" secondAttribute="trailing" id="JjL-c2-oh5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZCH-yd-NqL" secondAttribute="bottom" id="Svw-67-8hi"/>
+                <constraint firstItem="ZCH-yd-NqL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mf3-0J-TIS"/>
+            </constraints>
+            <point key="canvasLocation" x="-29" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
